@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.appHeader {
+    height: 100px;
+}
+
+.appNavigation {
+    background-color: yellow;
+    height: 100px;
+}
+
+.appMain {
+    background-color: pink;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.book, .news, .board, .favorite, .twitter {
+    width: 100%;
+}
+
+.appFooter {
+    background-color: lime;
+    height: 100px;
+}
+
+@media (min-width: 768px) {
+    .bookWrapper {
+        width:100%;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .book { 
+        width: 30%;
+        background-color: skyblue;
+    }
+
+    .boardWrapper {
+        width: 70%;
+        background-color: grey;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .board {
+        
+        background-color: tomato;
+        order: 1;
+    }
+
+    .favoriteWrapper {
+        background-color: teal;
+        display : flex;
+        flex-direction: row;
+    }
+
+    .twitter {
+        order: -1;
+    }
+}

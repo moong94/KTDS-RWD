@@ -23,6 +23,7 @@ body {
     "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
     "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     sans-serif;
+    /* 여러가지 환경에 고려해서 반응형으로 작동할 수 있도록*/
   background-color: #fff;
 }
 
