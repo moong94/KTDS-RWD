@@ -12,14 +12,19 @@
 /* 숨김 콘텐츠 */
 .sr-only {
     position:absolute;
-    width:1px;
+    width: 1px;
     height: 1px;
     padding: 0;
     margin: -1px;
-    overflow:hidden;
+    overflow: hidden;
     clip: rect(0,0,0,0);
     white-space: nowrap;
     border-width: 0;
+}
+
+/* 컨테이너 */
+.container {
+    min-width: 16.25rem;
 }
 
 /* 헤더 */
@@ -49,6 +54,28 @@
 }
 
 /* 검색 폼 */
-.searchFrom {
+.searchForm {
     width: 100%;
+}
+
+.searchForm__group {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.formInput {
+    background-color: yellow;
+    flex-grow: 1;
+/* 
+    &__input {
+        width: 100%
+    } */
+}
+
+.formInput__input {
+    width: 100%;
+}
+
+.searchForm .button {
+    white-space: nowrap;
 }
