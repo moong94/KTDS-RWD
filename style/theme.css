@@ -18,7 +18,7 @@
   --accent-color: var(--light-yellow);
   --accent-opacity-color: var(--yellow-opacity);
 
-  --accent-book: var(--green);
+  --accent-book: var(--green);  
   --accent-news: var(--yellow);
   --accent-board: var(--brown);
   --accent-favorite: var(--orange);
@@ -40,3 +40,4 @@
 
   --container-width: 64rem; /* 1024px */
 }
+  
