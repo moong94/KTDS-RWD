@@ -138,12 +138,10 @@ fieldset {
 /* 공통 메인 콘텐츠 */
 
 .appMain section {
-  height: 250px;
 }
 
-.book {
+/* .book {
   background: yellow;
-  height: 500px !important;
 }
 
 .news {
@@ -160,6 +158,70 @@ fieldset {
 
 .favorite {
   background: salmon;
+} */
+
+/* 공통 메인 콘텐츠 제목 */
+.sprite {
+  background: url(./../images/sprite_main.png) no-repeat;
+  padding-left: 4.0625rem;
+  height: 3.75rem;
+}
+
+.spriteBook {
+  background-position: 0 0;
+}
+
+.spriteNews {
+  background-position: 0 -230px;
+}
+
+.spriteBoard {
+  background-position: 0 -115px;
+}
+
+.spriteFavorite {
+  background-position: 0 -345px;
+}
+
+.spriteTwitter {
+  background-position: 0 -460px;
+}
+
+.accentBook {
+  color: var(--accent-book);
+}
+.accentNews {
+  color: var(--accent-news);
+}
+.accentBoard {
+  color: var(--accent-board);
+}
+.accentFavorite {
+  color: var(--accent-favorite);
+}
+.accentTwitter {
+  color: var(--accent-twitter);
+}
+
+.appMain [class*="__title"] {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: var(--spacing-base);
+}
+
+.appMain [class*="__koTitle"] {
+  font-size: var(--text-md);
+}
+
+.appMain [class*="__enTitle"] {
+  font-weight: 400;
+  font-size: var(--text-base);
+}
+
+.appMain [class*="__summary"] {
+  line-height: 1.5;
+  margin-top: var(--spacing-base);
 }
 
 /* 모바일 디바이스 */
