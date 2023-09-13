@@ -240,11 +240,10 @@ fieldset {
 
 .twitter__userInfo {
   display: inline-flex;
-  background: aqua;
 }
 
 .twitter__userProfile {
-  width: 100px;
+  width: 25%;
   float: right;
   shape-outside: circle(50%);
   aspect-ratio: 1/1;
