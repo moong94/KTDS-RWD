@@ -319,27 +319,35 @@ fieldset {
   /* 데스크탑 메인 콘텐츠 */
   .appMain {
     display: grid;
+    grid-template-areas: "news news news news news news news news news news news news"
+                         "book book book book . twitter twitter twitter twitter favorite favorite favorite"
+                         "book book book book . board board board board board board board";
     grid-template-columns: repeat(12 / 1fr);
-    /* grid-gap: var(--spacing-lg); */
+    grid-gap: var(--spacing-lg);
   }
 
   .book {
-    grid-area: 2/1/7/6;
+    /* grid-area: 2/1/7/6; */
+    grid-area: book;
   }
 
   .news { 
-    grid-area: 1/1/2/13;
+    /* grid-area: 1/1/2/13; */
+    grid-area: news;
   }
 
   .board {
-    grid-area: 3/6/4/13;
+    /* grid-area: 3/6/4/13; */
+    grid-area: board;
   }
 
   .twitter {
-    grid-area: 2/6/3/10;
+    /* grid-area: 2/6/3/10; */
+    grid-area: twitter;
   }
 
   .favorite {
-    grid-area: 2/10/3/13;
+    /* grid-area: 2/10/3/13; */
+    grid-area: favorite;
   }
 }
