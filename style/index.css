@@ -224,6 +224,39 @@ fieldset {
   margin-top: var(--spacing-base);
 }
 
+.news__videoContainer .iframeWrapper {
+  aspect-ratio: 16/9;
+}
+
+.news__videoContainer iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.twitter__container {
+  /* background: yellow; */
+  display: flow-root;
+}
+
+.twitter__userInfo {
+  display: inline-flex;
+  background: aqua;
+}
+
+.twitter__userProfile {
+  width: 100px;
+  float: right;
+  shape-outside: circle(50%);
+  aspect-ratio: 1/1;
+}
+
+.twitter__userProfileImage {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: 30% 40%;
+}
+
 /* 모바일 디바이스 */
 @media (min-width: 320px) and (max-width: 767px) {
   /* 모바일 헤더 */
